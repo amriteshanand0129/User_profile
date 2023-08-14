@@ -2,6 +2,9 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+textarea {
+    line-height: 25px;
+}
 .header {
     display: block;
     height: 100px;
@@ -24,6 +27,9 @@
 .homelogo:hover {
     border-bottom: 1px solid black;
 }
+.heading {
+    font-size: larger;
+}
 .profile {
     margin: auto;
     width: 50%;
@@ -39,13 +45,45 @@
 .gender_class {
     padding-left: 20px;
 }
-#Address {
-    resize: none;
-    max-width: 95%;
+#Phoneno, #City, #State, #Pincode {
+    line-height: 25px;
 }
-@media only screen and (min-width: 601px) {
-    #Address {
-        vertical-align: top;
+#Address {
+    margin-top: 10px;
+    resize: none;
+    width: 90%;
+}
+#Phoneno {
+    margin-top: 10px;
+    max-width: 90%;
+}
+#Citylabel, #Statelabel {
+    display: inline-block;
+    width: 35%;
+}
+#Pincodelabel {
+    display: inline-block;
+    width: 20%;
+}
+#City, #State {
+    width: 35%;
+}
+#Pincode {
+    width: 20%;
+}
+@media only screen and (min-width: 901px) {
+    #Statelabel2, #Pincodelabel2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #Statelabel, #Pincodelabel {
+        display: none;
+    }
+    #State, #City, #Pincode {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 90%;
     }
 }
 @media only screen and (max-width: 550px) {
@@ -58,9 +96,6 @@
     }
     .gender_class {
         padding-left: 0px;
-    }
-    #Address {
-        vertical-align: top;
     } 
 }
 @media only screen and (min-width: 401px) {
@@ -71,9 +106,6 @@
 @media only screen and (max-width: 400px) {
     .hometext {
         display: none;
-    }
-    #Phoneno, #Address, #City, #State, #Pincode {
-        max-width: 90%;
     }
 }
 @media only screen and (max-width: 290px) {
@@ -88,10 +120,6 @@
     .logo {
         max-height: 70px;
     }
-}
-#Phoneno, #City, #State, #Pincode {
-    border: none;
-    border-bottom: 1px solid rgb(182, 182, 182);
 }
 .save {
     background-color: white;

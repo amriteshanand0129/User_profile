@@ -24,7 +24,8 @@
         <div class="info">
             <form action="">
                 <label for="Phoneno">Phone No: </label>
-                <input type="tel" name="Phoneno" id="Phoneno" value="" size="15" maxlength="10">
+                <br>
+                <input type="tel" name="Phoneno" id="Phoneno" value="" size="30" maxlength="10">
                 <br><br>
                 <p style="display: inline;">Gender: </p>
                 <div class="gender_class">
@@ -39,18 +40,19 @@
                 </div>
                 <br>
                 <label for="Address">Address: </label>
-                <textarea name="Address" id="Address" cols="30" rows="2" maxlength="150" placeholder="Max 150 characters" onfocus="this.placholder=''"></textarea>
+                <br>
+                <textarea name="Address" id="Address" cols="150" rows="2" maxlength="150" placeholder="Max 150 characters" onfocus="this.placholder=''"></textarea>
                 <br><br>
-                <label for="City">City: </label>
-                <input type="text" name="City" id="City" size="21" maxlength="20">
+                <label for="City" id="Citylabel">City: </label>
+                <label for="State" id="Statelabel">State: </label>
+                <label for="Pincode" id="Pincodelabel">Pincode: </label>
+                <br>
+                <input type="text" name="City" id="City" maxlength="20">
+                <label for="State" id="Statelabel2">State: </label>
+                <input type="text" name="State" id="State" maxlength="20">
+                <label for="Pincode" id="Pincodelabel2">Pincode: </label>
+                <input type="text" name="Pincode" id="Pincode" inputmode="numeric" maxlength="6">
                 <br><br>
-                <label for="State">State: </label>
-                <input type="text" name="State" id="State" size="20" maxlength="20">
-                <br><br>
-                <label for="Pincode">Pincode: </label>
-                <input type="text" name="Pincode" id="Pincode" inputmode="numeric" size="6" maxlength="6">
-                <br><br>
-                <!-- <input type="submit" class="submit"> -->
                 <button id="save" class="save">Submit</button>
             </form>
         </div>
