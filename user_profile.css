@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+.nav {
+    display: block;
+}
+.nav a {
+    text-decoration: none; 
+    color: black;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    padding-right: 8%;
+    padding-top: 30px;
+}
+.homenav {
+    float: right;
+    padding-right: 5%;
+}
+.hometext:hover {
+    color: rgb(148, 148, 148);
+}
+.homelogo:hover {
+    border-bottom: 1px solid black;
+}
+.profile {
+    margin: auto;
+    width: 50%;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 4px;
+    padding-bottom: 30px;
+}
+.heading {
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.info {
+    padding-left: 60px; 
+    font-family: 'Montserrat', sans-serif;
+}
+.gender_class {
+    padding-left: 20px;
+}
+@media only screen and (min-width: 601px) {
+    #Address {
+        vertical-align: top;
+    }
+}
+@media only screen and (max-width: 600px){
+    .heading {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .info {
+        padding-left: 35px;
+        padding-right: 15px;
+    }
+    .gender_class {
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .profile {
+        width: 80%;
+    }
+    .gender_class {
+        padding-left: 0px;
+    }
+    #Address {
+        vertical-align: top;
+    }
+}
+@media only screen and (min-width: 361px) {
+    .homelogo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .logo {
+        max-height: 80px;
+    }
+    .hometext {
+        display: none;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .info {
+        padding-left: 10px;
+    }
+}
+#Phoneno, #City, #State, #Pincode {
+    border: none;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+.save {
+    background-color: white;
+    padding: 8px 10px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.save:hover {
+    box-shadow: 1px 1px 10px rgb(148, 148, 148);
+}

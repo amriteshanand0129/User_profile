@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="user_profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="nav">
+        <img src="Boofey1.png" alt="Logo" style="height: 100px;" class="logo">
+        <div class="homenav">
+            <a href="#" class="hometext">Home</a>
+            <a href="#" class="homelogo"><img src="homelogo.png" alt="Home" height="25px"></a>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="heading">
+            <h3>Edit profile</h3>
+        </div>
+        <div class="info">
+            <form action="">
+                <label for="Phoneno">Phone No: </label>
+                <input type="tel" name="Phoneno" id="Phoneno" value="" size="15" maxlength="10">
+                <br><br>
+                <p style="display: inline;">Gender: </p>
+                <div class="gender_class">
+                    <input type="radio" name="Gender" id="Male">
+                    <label for="Male">Male</label>
+                    <br>
+                    <input type="radio" name="Gender" id="Female">
+                    <label for="Female">Female</label>
+                    <br>
+                    <input type="radio" name="Gender" id="Nosay">
+                    <label for="Nosay">Prefer Not to Say</label>
+                </div>
+                <br>
+                <label for="Address">Address: </label>
+                <textarea name="Address" id="Address" cols="30" rows="2" maxlength="150" style="max-width: 60%; min-width: 175px; resize: none;" placeholder="Max 150 characters" onfocus="this.placholder=''"></textarea>
+                <br><br>
+                <label for="City">City: </label>
+                <input type="text" name="City" id="City" size="21" maxlength="20">
+                <br><br>
+                <label for="State">State: </label>
+                <input type="text" name="State" id="State" size="20" maxlength="20">
+                <br><br>
+                <label for="Pincode">Pincode: </label>
+                <input type="text" name="Pincode" id="Pincode" inputmode="numeric" size="6" maxlength="6">
+                <br><br>
+                <!-- <input type="submit" class="submit"> -->
+                <button id="save" class="save">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
